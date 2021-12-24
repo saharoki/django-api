@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -75,8 +76,12 @@ WSGI_APPLICATION = 'djangoapi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'movies_db',
+        'USER': 'admin',
+        'PASSWORD': 'admin123321',
+        'HOST': 'movies-db.cluster-cppq7pdgfrly.eu-central-1.rds.amazonaws.com',
+        'PORT': 3306
     }
 }
 
