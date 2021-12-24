@@ -1,3 +1,3 @@
-import mysqlclient
+#import mysqlclient
 
-mysqlclient.install_as_MySQLdb()
+#mysqlclient.install_as_MySQLdb()
