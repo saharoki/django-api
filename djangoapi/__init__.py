@@ -1,3 +1,3 @@
-import pymysql
+import mysqlclient
 
-pymysql.install_as_MySQLdb()
+mysqlclient.install_as_MySQLdb()
