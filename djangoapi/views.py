@@ -24,6 +24,7 @@ class MovieDetailView(APIView):
     """
     Retrieve, update or delete a movie instance.
     """
+    renderer_classes = [JSONRenderer]
     def get_object(self, pk):
         try:
             return Movie.objects.get(pk=pk)
