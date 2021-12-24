@@ -13,3 +13,4 @@ class Movie(models.Model):
 
     class Meta:
         app_label = 'djangoapi'
+        db_table = "movies"
