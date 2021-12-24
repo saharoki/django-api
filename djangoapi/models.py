@@ -10,3 +10,6 @@ class Movie(models.Model):
     score = models.FloatField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True, auto_now_add=True)
+
+    class Meta:
+        app_label = 'djangoapi'
